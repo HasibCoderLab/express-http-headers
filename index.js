@@ -4,7 +4,9 @@ const port = 8000
 app.use(express.json())
 
 app.get("/" ,(req,res) =>{
-    console.log(req.headers);
+    // console.log(req.headers);
+     console.log(req.get("user-agent"));
+
     
     res.send("Helo");
 
