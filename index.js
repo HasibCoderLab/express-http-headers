@@ -6,8 +6,9 @@ app.use(express.json())
 app.get("/" ,(req,res) =>{
     // console.log(req.headers);
     //  console.log(req.get("user-agent"));
-    res.set("x-username" , "Hasib");
-    res.header("x-username" , "Hasib");
+    // res.set("x-username" , "Hasib");
+    // res.header("x-username" , "Hasib");
+    res.removeHeader("x-powered-by")
     
 
     
